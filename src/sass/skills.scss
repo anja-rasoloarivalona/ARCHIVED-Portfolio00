@@ -1,0 +1,43 @@
+.skills {
+  
+    
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    overflow-x: hidden;
+
+    &__wrapper {
+        grid-column: 2 / 3;
+       // width: 96rem;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    &__container {
+        height: 80%;
+        min-width: 25rem;
+        max-width: 25rem;
+        background: blue;
+        padding: 2rem;
+        margin: 0 1rem;
+
+
+        & h1 {
+            text-align: center;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 1rem;
+            margin-top: 2rem;
+            color: $color-white;
+
+            &__item {
+                padding: .5rem 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        border: none;
+        padding: 1rem 3.5rem;
+        display: inline-block; 
+        border-radius: 10rem;
+        text-decoration: none;
+        font-size: 1.3rem;
+        background: $color-grey;
+        color: white;
+        margin: 0 1rem;
+    }
+
+    &:hover {
+        transform: translateY(-3px); /* (3px: move down) --- (-3px: move up) */
+        box-shadow: 0 1rem 2rem rgba(black,.2);
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: translateY(-1px); /*related to the initial link) */
+        box-shadow: 0 .5rem 1rem rgba(black,.2); 
+    }
+
+    &:focus {
+        outline: none;
+      
+    }
+  
+}

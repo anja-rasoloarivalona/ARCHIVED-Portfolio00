@@ -1,0 +1,112 @@
+.form {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  repeat(2, max-content) 1fr max-content;
+    background: $color-white;
+    padding: 3rem 2rem;
+    z-index: 1000;
+    background: $color-white;
+    box-shadow: 0px 0px 8px 0px rgba(167,167,181,1);
+    justify-items: center;
+
+    position: relative;
+
+    @media screen and (max-width: 1164px) {
+        width: 60vw;
+   }
+
+   @media screen and (max-width: 897px) {
+        width: 70vw;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 85vw;
+    }
+
+    
+
+    &__group {
+        width: 80%;  
+        display: flex;
+        flex-direction: column;
+        margin: .5rem 0;  
+        
+        &--message {
+            grid-column: 1 / -1;
+            width: 90%;
+
+            & textarea {
+                height: 20rem;
+                resize: none;
+            }
+        }
+    }
+
+    &__input {
+        font-size: 1.4rem;
+        font-family: inherit; 
+        color: black;
+        padding: 1.3rem 0;
+        border: none;
+        border-bottom: 1px solid rgb(199, 198, 198); // so none of the element is moving by 3px when focused
+        width: 100%;
+        display: block;
+        transition: all .3s;
+        position: relative;
+
+        &:focus { 
+            outline: none; 
+            box-shadow: 0 1rem 2rem rgba(black, .1);
+            border-bottom: 1px solid $color-primary; 
+        }
+
+
+        &:focus:invalid {
+            border-bottom: 1px solid rgb(151, 4, 4);
+        }
+
+        &::-webkit-input-placeholder { //pseudo element : real object on the page
+            color: black;
+        }
+    }
+
+
+
+    &__label {
+        font-size: 1rem;
+        font-weight: 400;
+        display: block; //otherwise, we cannot really use these box model properties
+        transition: all .3s;
+        color: grey;
+        margin-top: .5rem;
+      
+
+
+ 
+    }
+
+    &__input:placeholder-shown + &__label { //as the label is not the child of the input, we use this direct/first sibling selector (IMPORTANT: it goes down, the sibling must be positionned below the element - see HTML
+        opacity: 0; //but still on the apge
+        visibility: hidden;  //so it's reaaly gone
+        transform: translateY(-4rem);
+    }
+
+   
+
+
+
+    &__submit {
+        grid-row: 4 / 5;
+        grid-column: 1 / -1;
+        width: 15rem;
+        height: 4rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+
+    
+}
