@@ -214,9 +214,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 1; }
+    z-index: -1; }
     .contact__header h1, .contact__header p {
       transform: translateY(-1rem); }
+    .contact__header p {
+      max-width: 60%;
+      text-align: center; }
   .contact__bottom {
     grid-column: 1 / -1;
     width: 100%;
@@ -225,9 +228,21 @@ body {
     align-items: center;
     justify-content: center; }
     .contact__bottom__wrapper {
-      width: 50%;
+      width: 60%;
       display: flex;
       justify-content: space-between; }
+      @media screen and (max-width: 712px) {
+        .contact__bottom__wrapper {
+          width: 70%; } }
+      @media screen and (max-width: 597px) {
+        .contact__bottom__wrapper {
+          width: 80%; } }
+      @media screen and (max-width: 417px) {
+        .contact__bottom__wrapper {
+          width: 94%; } }
+      @media screen and (max-width: 360px) {
+        .contact__bottom__wrapper {
+          width: 100%; } }
     .contact__bottom__item {
       display: flex;
       flex-direction: column;
@@ -397,7 +412,8 @@ body {
   justify-content: space-between;
   flex-direction: column;
   box-shadow: 4px 2px 14px -7px #b3adb3;
-  position: fixed; }
+  position: fixed;
+  background: #fff; }
   @media screen and (max-width: 900px) {
     .sidebar {
       position: absolute;
