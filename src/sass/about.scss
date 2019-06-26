@@ -1,7 +1,10 @@
 .about {
     height: 100vh;
     position: relative;
-    //min-width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
     &__layer {
         grid-row: 2 / 3;
@@ -10,19 +13,69 @@
         height: 100%;
         width: 100%;
         z-index: -1;
-       // background: blueviolet;
+        background: grey;
+    }
+
+    &__wrapper {
+        width: 52rem;
+        height: 41rem;
+        position: relative;
+        transform: translateY(-9.5rem);
+      
+  
     }
 
     &__text {
-        width: 15rem;
-        height: 15rem;
+        width: 40rem;
+        height: 30rem;
         background: white;
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 10rem;
-        margin: auto;
-        border-radius: 50%;
 
+      //  top: 0rem;
+        //bottom: 0rem;
+  //      left: 0;
+     //   right: 10rem;
+
+        
+        margin: auto;
+        border-radius: 2px;
+        clip-path: polygon(0 0, 100% 0%, 100% 75%, 75% 75%, 75% 89%, 50% 75%, 0% 75%);
+         border-radius: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 2rem;
+
+        & > * {
+            transform: translateY(-4rem);
+        }
+
+        &__subtitle {
+          //  margin-top: .3rem;
+            margin-bottom: 2rem;
+        }
+
+
+        & p {
+            text-align: center;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+   
     }
+
+    &__img {
+        width: 20rem;
+        height: 25rem;
+        object-fit: cover;
+        position: absolute;
+        bottom: -6rem;
+        right: 2.3rem;
+        margin: auto;
+        border-radius: 2px;
+       // z-index: -1;
+    }
+
 }
