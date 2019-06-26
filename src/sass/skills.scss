@@ -7,6 +7,7 @@
   overflow-x: hidden;
   padding: 3rem;
 
+
   &__wrapper {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -19,6 +20,17 @@
     grid-gap: 1rem;
     padding: 3rem;
     margin-top: 2rem;
+
+    @media screen and (max-width: 471px) {
+      grid-column: 1 / -1;
+      padding: 0rem;
+  
+     
+   
+     
+    }
+
+    
   }
 
   &__title {
@@ -40,6 +52,12 @@
     padding: 2rem;
     margin: 0 1rem;
     position: relative;
+
+    @media screen and (max-width: 471px) {
+      margin: 0;
+      justify-self: center;
+     
+    }
 
     &__draw {
       position: absolute;

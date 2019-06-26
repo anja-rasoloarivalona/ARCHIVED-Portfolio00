@@ -14,6 +14,18 @@
         font-size: 6rem;
         font-weight: 600;
         color: $color-grey;
+
+        @media screen and (max-width: 384px) {
+            font-size: 5rem; 
+       }
+
+        @media screen and (max-width: 319px) {
+            font-size: 4rem; 
+        }
+
+        @media screen and (max-width: 260px) {
+            font-size: 3rem; 
+        }
     }
 
     &__para {

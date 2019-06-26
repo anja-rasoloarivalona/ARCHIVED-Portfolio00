@@ -17,6 +17,9 @@
     height: 41rem;
     position: relative;
     transform: translateY(-9.5rem); }
+    @media screen and (max-width: 548px) {
+      .about__wrapper {
+        width: 95%; } }
   .about__text {
     width: 40rem;
     height: 30rem;
@@ -31,6 +34,14 @@
     align-items: center;
     justify-content: center;
     padding: 3rem 2rem; }
+    @media screen and (max-width: 548px) {
+      .about__text {
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translate(0);
+        width: auto;
+        clip-path: none; } }
     .about__text > * {
       transform: translateY(-4rem); }
     .about__text__subtitle {
@@ -48,6 +59,14 @@
     right: 2.3rem;
     margin: auto;
     border-radius: 2px; }
+    @media screen and (max-width: 548px) {
+      .about__img {
+        transform: translateX(-3.7rem) translateY(0.45rem); } }
+    @media screen and (max-width: 548px) {
+      .about__img {
+        transform: translate(0);
+        right: 0;
+        left: 0; } }
 
 *,
 *::before,
@@ -59,12 +78,19 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+  @media screen and (max-width: 500px) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-weight: 300;
   line-height: 1.6;
   font-family: "Open Sans", sans-serif; }
+
+::-webkit-scrollbar {
+  display: none; }
 
 .container {
   display: grid;
@@ -80,6 +106,10 @@ body {
 .home {
   grid-row: 1 / 2;
   grid-column: center-start / center-end; }
+  @media screen and (max-width: 587px) {
+    .home {
+      grid-column: full-start / full-end;
+      padding: 1rem; } }
 
 .about {
   grid-row: 2 / 3;
@@ -109,6 +139,10 @@ body {
     align-content: center;
     justify-content: center;
     margin-top: 1rem; }
+    @media screen and (max-width: 471px) {
+      .portfolio__gallery {
+        padding: 0;
+        grid-template-columns: max-content; } }
     .portfolio__gallery__item {
       width: 100%;
       height: 100%;
@@ -116,6 +150,9 @@ body {
       background-position: center;
       z-index: 10;
       position: relative; }
+      @media screen and (max-width: 471px) {
+        .portfolio__gallery__item {
+          width: 35rem; } }
       .portfolio__gallery__item__inner {
         position: absolute;
         top: 0;
@@ -329,6 +366,15 @@ body {
     font-size: 6rem;
     font-weight: 600;
     color: #8a7878; }
+    @media screen and (max-width: 384px) {
+      .home__title {
+        font-size: 5rem; } }
+    @media screen and (max-width: 319px) {
+      .home__title {
+        font-size: 4rem; } }
+    @media screen and (max-width: 260px) {
+      .home__title {
+        font-size: 3rem; } }
   .home__para {
     text-align: center;
     margin-bottom: 3rem; }
@@ -407,7 +453,8 @@ body {
           top: 0rem;
           margin: auto; } }
   .sidebar__list {
-    width: 100%; }
+    width: 100%;
+    transform: translateY(-13%); }
     @media screen and (max-width: 900px) {
       .sidebar__list {
         width: 50%; } }
@@ -422,15 +469,15 @@ body {
           padding: 3.5rem 3rem; } }
       .sidebar__list__item__icon {
         fill: #1a45bb;
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         object-fit: cover;
-        margin-right: 1rem; }
+        margin-right: 1.3rem; }
       .sidebar__list__item a {
         text-decoration: none;
         font-size: 1.4rem;
         font-weight: 500; }
-        .sidebar__list__item a:active {
+        .sidebar__list__item a, .sidebar__list__item a:visited, .sidebar__list__item a:active {
           color: #1a45bb; }
   .sidebar__active {
     background: #ece6e6; }
@@ -483,6 +530,10 @@ body {
     grid-gap: 1rem;
     padding: 3rem;
     margin-top: 2rem; }
+    @media screen and (max-width: 471px) {
+      .skills__wrapper {
+        grid-column: 1 / -1;
+        padding: 0rem; } }
   .skills__title {
     grid-column: 1 / -1;
     text-align: center;
@@ -497,6 +548,10 @@ body {
     padding: 2rem;
     margin: 0 1rem;
     position: relative; }
+    @media screen and (max-width: 471px) {
+      .skills__container {
+        margin: 0;
+        justify-self: center; } }
     .skills__container__draw {
       position: absolute;
       top: 0;

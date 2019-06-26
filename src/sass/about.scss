@@ -21,6 +21,10 @@
         height: 41rem;
         position: relative;
         transform: translateY(-9.5rem);
+
+        @media screen and (max-width: 548px) {
+            width: 95%;
+        } 
       
   
     }
@@ -47,6 +51,17 @@
         align-items: center;
         justify-content: center;
         padding: 3rem 2rem;
+
+        @media screen and (max-width: 548px) {
+            top: 0;
+            left: 0;
+            right: 0;
+            transform: translate(0);
+            width: auto;
+            clip-path: none;
+        }    
+
+    
 
         & > * {
             transform: translateY(-4rem);
@@ -75,6 +90,15 @@
         right: 2.3rem;
         margin: auto;
         border-radius: 2px;
+        @media screen and (max-width: 548px) {
+            transform: translateX(-3.7rem) translateY(.45rem)
+        }
+
+        @media screen and (max-width: 548px) {
+            transform: translate(0);
+            right: 0;
+            left: 0;
+        }
        // z-index: -1;
     }
 
