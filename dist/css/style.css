@@ -454,7 +454,8 @@ body {
     grid-template-columns: repeat(auto-fit, 25rem);
     grid-template-rows: repeat(auto-fit, 43rem);
     grid-auto-rows: 43rem;
-    grid-gap: 1rem; }
+    grid-gap: 1rem;
+    padding: 3rem; }
   .skills__container {
     height: 100%;
     width: 100%;
@@ -541,12 +542,12 @@ body {
         left: 0;
         right: 0;
         bottom: 0; }
-    @media screen and (max-width: 965px) {
-      .skills__container__business {
+    @media screen and (max-width: 1037px) {
+      .skills__container--business {
         grid-column: 1 / -1;
-        height: 50%; } }
-    @media screen and (max-width: 647px) {
-      .skills__container__business {
+        height: 70%; } }
+    @media screen and (max-width: 714px) {
+      .skills__container--business {
         height: 100%; } }
     .skills__container h1 {
       text-align: center; }

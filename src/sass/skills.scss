@@ -15,6 +15,7 @@
     grid-template-rows: repeat(auto-fit, 43rem);
     grid-auto-rows: 43rem;
     grid-gap: 1rem;
+    padding: 3rem;
   }
 
   &__container {
@@ -148,15 +149,15 @@
       }
     }
 
-    &__business {
-      @media screen and (max-width: 965px) {
-        grid-column: 1 / -1;
-        height: 50%;
-      }
+    &--business {
+        @media screen and (max-width: 1037px) {
+            grid-column: 1 / -1;
+            height: 70%;
+        }
 
-      @media screen and (max-width: 647px) {
-        height: 100%;
-      }
+        @media screen and (max-width: 714px) {
+            height: 100%;
+        }
     }
 
     & h1 {
