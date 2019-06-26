@@ -1,43 +1,178 @@
 .skills {
-  
-    
+  display: grid;
+  grid-template-columns: 1fr 80vw 1fr;
+  align-content: center;
+  justify-content: center;
+  overflow-x: hidden;
+  padding: 3rem;
+
+  &__wrapper {
+    grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    overflow-x: hidden;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    grid-template-rows: repeat(auto-fit, 43rem);
+    grid-auto-rows: 43rem;
+    grid-gap: 1rem;
+  }
 
-    &__wrapper {
-        grid-column: 2 / 3;
-       // width: 96rem;
+  &__container {
+    height: 100%;
+    width: 100%;
+    background: blue;
+    padding: 2rem;
+    margin: 0 1rem;
+    position: relative;
 
+    &__draw {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 21rem;
+      height: 16rem;
 
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
+      &--front {
+        border: 3px solid white;
+        position: absolute;
+        background: transparent;
 
-
-    &__container {
-        height: 80%;
-        min-width: 25rem;
-        max-width: 25rem;
-        background: blue;
-        padding: 2rem;
-        margin: 0 1rem;
-
-
-        & h1 {
-            text-align: center;
+        &__1,
+        &__3 {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 50%;
         }
 
-        &__list {
-            list-style: none;
-            padding: 1rem;
-            margin-top: 2rem;
-            color: $color-white;
-
-            &__item {
-                padding: .5rem 0;
-            }
+        &__1 {
+          right: 4rem;
         }
+
+        &__3 {
+          bottom: 0;
+          left: 4rem;
+        }
+
+        &__2 {
+          width: 13rem;
+          height: 4rem;
+          border-radius: 5px;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+
+      &--back {
+        background: transparent;
+        border: 4px solid white;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        &__1,
+        &__2 {
+          width: 8rem;
+          height: 8rem;
+        }
+
+        &__3,
+        &__4 {
+          width: 5rem;
+          height: 5rem;
+        }
+
+        &__1 {
+          transform: translate(-50%, -50%);
+        }
+
+        &__2 {
+          transform: translate(49%, 49%);
+        }
+
+        &__3 {
+          transform: translate(50%, -50%);
+        }
+
+        &__4 {
+          transform: translate(-50%, 50%);
+        }
+      }
+
+      &--business {
+        &__1,
+        &__2,
+        &__3 {
+          position: absolute;
+          margin: auto;
+        }
+
+        &__1,
+        &__3 {
+          width: 7rem;
+          height: 7rem;
+          border: 3px solid white;
+          background: transparent;
+        }
+
+        &__1 {
+          left: 1.5rem;
+          bottom: 0;
+        }
+
+        &__3 {
+          top: 0;
+          right: 3.9rem;
+          border-radius: 50%;
+        }
+
+        &__2 {
+          width: 13rem;
+          height: 4rem;
+          border: 3px solid white;
+          background: transparent;
+          transform: rotate(30deg);
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
     }
+
+    &__business {
+      @media screen and (max-width: 965px) {
+        grid-column: 1 / -1;
+        height: 50%;
+      }
+
+      @media screen and (max-width: 647px) {
+        height: 100%;
+      }
+    }
+
+    & h1 {
+      text-align: center;
+    }
+
+    &__list {
+      list-style: none;
+      padding: 1rem;
+      margin-top: 2rem;
+      color: $color-white;
+
+      &__item {
+        padding: 0.5rem 0;
+        opacity: 0;
+      }
+    }
+  }
 }

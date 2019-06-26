@@ -98,6 +98,7 @@ body {
   .portfolio__gallery {
     width: 100%;
     padding: 1rem;
+    max-width: 136rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, 45rem);
     grid-template-rows: repeat(auto-fit, 22rem);
@@ -149,8 +150,7 @@ body {
 
 .skills {
   grid-row: 4 / 5;
-  grid-column: full-start / full-end;
-  height: 100vh; }
+  grid-column: full-start / full-end; }
 
 .contact {
   grid-row: 5 / 6;
@@ -441,20 +441,113 @@ body {
 
 .skills {
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  overflow-x: hidden; }
+  grid-template-columns: 1fr 80vw 1fr;
+  align-content: center;
+  justify-content: center;
+  overflow-x: hidden;
+  padding: 3rem; }
   .skills__wrapper {
     grid-column: 2 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: space-around; }
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    grid-template-rows: repeat(auto-fit, 43rem);
+    grid-auto-rows: 43rem;
+    grid-gap: 1rem; }
   .skills__container {
-    height: 80%;
-    min-width: 25rem;
-    max-width: 25rem;
+    height: 100%;
+    width: 100%;
     background: blue;
     padding: 2rem;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    position: relative; }
+    .skills__container__draw {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 21rem;
+      height: 16rem; }
+      .skills__container__draw--front {
+        border: 3px solid white;
+        position: absolute;
+        background: transparent; }
+        .skills__container__draw--front__1, .skills__container__draw--front__3 {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 50%; }
+        .skills__container__draw--front__1 {
+          right: 4rem; }
+        .skills__container__draw--front__3 {
+          bottom: 0;
+          left: 4rem; }
+        .skills__container__draw--front__2 {
+          width: 13rem;
+          height: 4rem;
+          border-radius: 5px;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto; }
+      .skills__container__draw--back {
+        background: transparent;
+        border: 4px solid white;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; }
+        .skills__container__draw--back__1, .skills__container__draw--back__2 {
+          width: 8rem;
+          height: 8rem; }
+        .skills__container__draw--back__3, .skills__container__draw--back__4 {
+          width: 5rem;
+          height: 5rem; }
+        .skills__container__draw--back__1 {
+          transform: translate(-50%, -50%); }
+        .skills__container__draw--back__2 {
+          transform: translate(49%, 49%); }
+        .skills__container__draw--back__3 {
+          transform: translate(50%, -50%); }
+        .skills__container__draw--back__4 {
+          transform: translate(-50%, 50%); }
+      .skills__container__draw--business__1, .skills__container__draw--business__2, .skills__container__draw--business__3 {
+        position: absolute;
+        margin: auto; }
+      .skills__container__draw--business__1, .skills__container__draw--business__3 {
+        width: 7rem;
+        height: 7rem;
+        border: 3px solid white;
+        background: transparent; }
+      .skills__container__draw--business__1 {
+        left: 1.5rem;
+        bottom: 0; }
+      .skills__container__draw--business__3 {
+        top: 0;
+        right: 3.9rem;
+        border-radius: 50%; }
+      .skills__container__draw--business__2 {
+        width: 13rem;
+        height: 4rem;
+        border: 3px solid white;
+        background: transparent;
+        transform: rotate(30deg);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+    @media screen and (max-width: 965px) {
+      .skills__container__business {
+        grid-column: 1 / -1;
+        height: 50%; } }
+    @media screen and (max-width: 647px) {
+      .skills__container__business {
+        height: 100%; } }
     .skills__container h1 {
       text-align: center; }
     .skills__container__list {
@@ -463,4 +556,5 @@ body {
       margin-top: 2rem;
       color: #fff; }
       .skills__container__list__item {
-        padding: .5rem 0; }
+        padding: 0.5rem 0;
+        opacity: 0; }
