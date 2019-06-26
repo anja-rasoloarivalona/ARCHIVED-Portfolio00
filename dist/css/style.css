@@ -182,8 +182,28 @@ body {
   .contact__bottom {
     grid-column: 1 / -1;
     width: 100%;
-    height: 10rem;
-    background: blue; }
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contact__bottom__wrapper {
+      width: 50%;
+      display: flex;
+      justify-content: space-between; }
+    .contact__bottom__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+      padding: 1rem;
+      transform: translateY(-2rem); }
+      .contact__bottom__item div {
+        text-align: center; }
+      .contact__bottom__item__icon {
+        width: 5rem;
+        height: 5rem;
+        fill: #1a45bb; }
 
 .form {
   grid-row: 2 / 3;
