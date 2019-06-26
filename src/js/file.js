@@ -28,6 +28,15 @@ $('.sidebar__toggle').on('click', function(){
    
 })
 
+$(function() {
+    $(".sidebar__list__item").click(function() {
+       // remove classes from all
+       $(".sidebar__list li").removeClass("sidebar__active");
+       // add class to the one we clicked
+       $(this).addClass("sidebar__active");
+    });
+ });
+
 
 
 

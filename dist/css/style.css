@@ -429,6 +429,8 @@ body {
         text-decoration: none;
         font-size: 1.4rem;
         font-weight: 500; }
+        .sidebar__list__item a:active {
+          color: #1a45bb; }
   .sidebar__active {
     background: #ece6e6; }
     .sidebar__active::before {
