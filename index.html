@@ -22,33 +22,28 @@
 <body class="container">
 
     <div class="loader">
-            <div class="atom-spinner">
-                    <div class="spinner-inner">
-                      <div class="spinner-line"></div>
-                      <div class="spinner-line"></div>
-                      <div class="spinner-line"></div>
-                      <!--Chrome renders little circles malformed :(-->
-                      <div class="spinner-circle">
-                        &#9679;
-                      </div>
-                    </div>
+        <div class="atom-spinner">
+            <div class="spinner-inner">
+                <div class="spinner-line"></div>
+                <div class="spinner-line"></div>
+                <div class="spinner-line"></div>
+                <!--Chrome renders little circles malformed :(-->
+                <div class="spinner-circle">
+                    &#9679;
+                </div>
             </div>
+        </div>
     </div>
 
 
-   <nav class="sidebar">
-
-
+    <nav class="sidebar">
         <div class="sidebar__header">
             <img src="img/profile.jpg" alt="" class="sidebar__header__img">
             <div class="sidebar__header__point"></div>
             <h3 class="title--secondary">Anja Rasoloarivalona</h3>
-            <div>I'm a developer</div>
-                    
-            
+            <div>Developer & Business Analyst</div>
         </div>
         <ul class="sidebar__list">
-
             <li class="sidebar__list__item sidebar__list__item--home sidebar__active">
                 <svg class="sidebar__list__item__icon">
                     <use xlink:href="img/icon/sprite.svg#icon-home"></use>
@@ -68,10 +63,10 @@
                 <a href="#portfolio">Portfolio</a>
             </li>
             <li class="sidebar__list__item sidebar__list__item--skills">
-                    <svg class="sidebar__list__item__icon">
-                        <use xlink:href="img/icon/sprite.svg#icon-cog"></use>
-                    </svg>
-                    <a href="#skills">Skills</a>
+                <svg class="sidebar__list__item__icon">
+                    <use xlink:href="img/icon/sprite.svg#icon-cog"></use>
+                </svg>
+                <a href="#skills">Skills</a>
             </li>
             <li class="sidebar__list__item sidebar__list__item--contact">
                 <svg class="sidebar__list__item__icon">
@@ -82,48 +77,49 @@
         </ul>
         <div class="sidebar__bottom">
             <div class="sidebar__social-media">
+                <a href="https://www.linkedin.com/in/anja-rasoloarivalona/" target="#">
                 <svg class="sidebar__social-media__icon">
-                    <use xlink:href="img/icon/sprite.svg#icon-linkedin2"></use>
+                    
+                        <use xlink:href="img/icon/sprite.svg#icon-linkedin2"></use>
+                    
                 </svg>
+                </a>
+                <a href="https://github.com/anja-rasoloarivalona" target="#">
                 <svg class="sidebar__social-media__icon">
+                   
                     <use xlink:href="img/icon/sprite.svg#icon-github"></use>
+                    
                 </svg>
+            </a>
             </div>
             <div class="sidebar__copy">
                 <small>
-                    Copyright
+                    &copy; Anja Rasoloarivalona - 2019
                 </small>
             </div>
-
         </div>
-
-
-
     </nav>
 
 
-     <!----------------------HOME------------------->
+    <!----------------------HOME------------------->
     <img src="img/layer1.svg" alt="layer" class="home__layer">
     <div class="sidebar__toggle">
-            <span class="sidebar__toggle--1"></span>
-            <span class="sidebar__toggle--2"></span>
-            <span class="sidebar__toggle--3"></span>
-        </div>
+        <span class="sidebar__toggle--1"></span>
+        <span class="sidebar__toggle--2"></span>
+        <span class="sidebar__toggle--3"></span>
+    </div>
     <main class="home scroll" id="home">
-       
-            
+
+
         <h3 class="title--secondary">Hello, my name is Anja Rasoloarivalona</h3>
         <div class="home__title">
-
-                    I'm
-                
-                <span class="home__title--1">a Developer</span>
-                <span class="home__title--2">an Analyst</span>
-                <div class="home__title__writer"></div>
-                <div class="home__title__hide"></div>
+            I'm
+            <span class="home__title--1">a Developer</span>
+            <span class="home__title--2">an Analyst</span>
+            <div class="home__title__writer"></div>
+            <div class="home__title__hide"></div>
         </div>
-        <div class="home__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium doloribus
-            cupiditate ab, sunt culpa natus dolores, fugiat at hic ipsam quas labore odit qui.</div>
+    <div class="home__para">I am passionate about creating elegant, unique and functional websites and applications. If you have something in mind, feel free to contact me! In the meantime, enjoy your little ride in my portfolio.</div>
         <div class="home__cta">
             <a class="home__cta__btn btn btn--blue" href="#portfolio">
                 Portfolio
@@ -137,15 +133,11 @@
     <!----------------------About------------------->
     <img src="img/layer2.svg" alt="layer" class="about__layer">
     <section class="about scroll" id="about">
-
         <div class="about__wrapper">
-
             <div class="about__text">
-
                 <h3 class="title--secondary">About Me</h3>
-                <div class="about__text__subtitle">I am a Developer and a Business Analyst</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quod.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, perferendis!</p>
+                <div class="about__text__subtitle"> I am a Developer and a Business Analyst</div>
+                <p>" After graduating from HEC Montreal, I currently have a Bachelor of Business Administration degree. I specialized in information technology. At the end of my studies, I fell in love with programming and this passion drove me to become a self-taught developer and allowed me to get to where I am now. "</p>
                 <hr>
                 <a href="#skills" class="about__btn">Skills</a>
             </div>
@@ -156,17 +148,14 @@
 
 
     <section class="portfolio scroll" id="portfolio">
-        
         <h1 class="portfolio__title">My Portfolio</h1>
-
-
         <div class="portfolio__gallery">
             <div class="portfolio__gallery__item portfolio__gallery__item--1">
                 <div class="portfolio__gallery__item__inner">
                     <h1 class="portfolio__gallery__item__inner__title">E-commerce</h1>
                     <div class="portfolio__gallery__item__inner__cta">
-                        <a href="#" class="btn btn--blue">Live Demo</a>
-                        <a href="#" class="btn btn--white">View Source</a>
+                        <a href="https://teck-market.web.app/" target="#" class="btn btn--blue">Live Demo</a>
+                        <a href="https://github.com/anja-rasoloarivalona/REACT---TechMarket" target="#" class="btn btn--white">View Source</a>
                     </div>
 
                 </div>
@@ -175,8 +164,8 @@
                 <div class="portfolio__gallery__item__inner">
                     <h1 class="portfolio__gallery__item__inner__title">Real Estate</h1>
                     <div class="portfolio__gallery__item__inner__cta">
-                            <a href="#" class="btn btn--blue">Live Demo</a>
-                            <a href="#" class="btn btn--white">View Source</a>
+                        <a href="https://trimmo-real-estate.web.app/" target="#" class="btn btn--blue">Live Demo</a>
+                        <a href="https://github.com/anja-rasoloarivalona/REACT---Trimmo" target="#" class="btn btn--white">View Source</a>
                     </div>
                 </div>
             </div>
@@ -184,17 +173,17 @@
                 <div class="portfolio__gallery__item__inner">
                     <h1 class="portfolio__gallery__item__inner__title">Restaurant</h1>
                     <div class="portfolio__gallery__item__inner__cta">
-                            <a href="#" class="btn btn--blue">Live Demo</a>
-                            <a href="#" class="btn btn--white">View Source</a>
+                        <a href="https://triano-restaurant.web.app/" target="#" class="btn btn--blue">Live Demo</a>
+                        <a href="https://github.com/anja-rasoloarivalona/REACT---Triano-Restaurant" target="#" class="btn btn--white">View Source</a>
                     </div>
                 </div>
             </div>
             <div class="portfolio__gallery__item portfolio__gallery__item--4">
                 <div class="portfolio__gallery__item__inner">
-                    <h1 class="portfolio__gallery__item__inner__title">Brand</h1>
+                    <h1 class="portfolio__gallery__item__inner__title">Brand - coming soon</h1>
                     <div class="portfolio__gallery__item__inner__cta">
-                            <a href="#" class="btn btn--blue">Live Demo</a>
-                            <a href="#" class="btn btn--white">View Source</a>
+                      <!--  <a href="#" class="btn btn--blue">Live Demo</a>-->
+                        <a href="https://github.com/anja-rasoloarivalona/air-jordan-brand" target="#" class="btn btn--white">View Source</a>
                     </div>
                 </div>
             </div>
@@ -240,7 +229,7 @@
                     <li class="skills__container__list__item">Node.js</li>
                     <li class="skills__container__list__item">Express.js</li>
                     <li class="skills__container__list__item">MySQL</li>
-                    <li class="skills__container__list__item">MongoDB</li>
+                  <!--  <li class="skills__container__list__item">MongoDB</li>-->
                 </ul>
             </div>
             <div class="skills__container skills__container--business">
@@ -269,8 +258,8 @@
 
         <div class="contact__header">
             <h1 class="title--primary">Have a project on Mind?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam mollitia consequatur beatae
-                eligendi sequi, voluptatem laudantium nostrum iure incidunt.</p>
+            <p>Feel free to contact me. It would be a great pleasure to work with you! 
+                </p>
         </div>
 
 
@@ -332,11 +321,6 @@
         </div>
 
     </section>
-
-
-
-
-
 </body>
 
 <script src="js/main.js"></script>
