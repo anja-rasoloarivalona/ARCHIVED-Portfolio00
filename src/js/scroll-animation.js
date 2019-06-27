@@ -14,7 +14,6 @@ var scene1 = new ScrollMagic.Scene({
 })
 .reverse(false)
 .setTween(scroll1)
-//.addIndicators()
 .addTo(controller);
 
 
@@ -35,7 +34,6 @@ var scene1 = new ScrollMagic.Scene({
 })
 .reverse(false)
 .setTween(scroll2)
-//.addIndicators()
 .addTo(controller);
 
 
