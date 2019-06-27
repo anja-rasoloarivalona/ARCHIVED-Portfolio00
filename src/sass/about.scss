@@ -4,7 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
+
+
+
+   opacity: 0;
   
     
 
@@ -36,23 +39,19 @@
         height: 30rem;
         background: white;
         position: absolute;
-
-      //  top: 0rem;
-        //bottom: 0rem;
-  //      left: 0;
-     //   right: 10rem;
-
-        
         margin: auto;
         border-radius: 2px;
         clip-path: polygon(0 0, 100% 0%, 100% 75%, 75% 75%, 75% 89%, 50% 75%, 0% 75%);
-         border-radius: 1rem;
-
+        border-radius: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 3rem 2rem;
+
+
+
+    
 
         @media screen and (max-width: 548px) {
             top: 0;
@@ -67,11 +66,13 @@
 
         & > * {
             transform: translateY(-4rem);
+            
         }
 
         &__subtitle {
-          //  margin-top: .3rem;
+         
             margin-bottom: 2rem;
+           
         }
 
 

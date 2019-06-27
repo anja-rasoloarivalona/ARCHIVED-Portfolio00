@@ -1,3 +1,5 @@
+
+
 var width = $(document).width();
 
 
@@ -18,6 +20,7 @@ if(width > 900){
 } else {
     isSidebarAnimated = '-100%';
 }
+
 
 $(window).on('load', function(){
     var loader = new TimelineMax({repeat:0})

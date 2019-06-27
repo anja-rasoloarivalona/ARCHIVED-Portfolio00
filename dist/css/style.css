@@ -161,88 +161,7 @@ body {
 
 .portfolio {
   grid-row: 3 / 4;
-  grid-column: full-start / full-end;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 2rem 0;
-  margin-bottom: 1rem;
-  position: relative; }
-  .portfolio__display-fix {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    background: white;
-    height: 5px;
-    transform: translateY(-0.5rem);
-    z-index: 2000; }
-  .portfolio__title {
-    font-size: 2rem;
-    color: #42318C;
-    margin-bottom: 2rem; }
-  .portfolio__gallery {
-    width: 100%;
-    padding: 1rem;
-    max-width: 136rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 45rem);
-    grid-template-rows: repeat(auto-fit, 22rem);
-    grid-auto-rows: 22rem;
-    grid-gap: 1rem;
-    align-content: center;
-    justify-content: center;
-    margin-top: 1rem; }
-    @media screen and (max-width: 471px) {
-      .portfolio__gallery {
-        padding: 0;
-        grid-template-columns: max-content; } }
-    .portfolio__gallery__item {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      z-index: 10;
-      position: relative;
-      border-radius: 3px; }
-      @media screen and (max-width: 471px) {
-        .portfolio__gallery__item {
-          width: 35rem; } }
-      .portfolio__gallery__item__inner {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        background-image: linear-gradient(130deg, rgba(3, 1, 47, 0.941614) 0%, rgba(11, 11, 48, 0.950018) 39%, #07014a 100%);
-        transition: all .2s ease-in;
-        z-index: 200;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column; }
-        .portfolio__gallery__item__inner__title {
-          font-size: 2.5rem;
-          color: #fff;
-          opacity: 0;
-          transform: translateY(30%);
-          transition: all .2s ease-in;
-          margin-bottom: 1.5rem; }
-      .portfolio__gallery__item:hover .portfolio__gallery__item__inner {
-        opacity: 1; }
-        .portfolio__gallery__item:hover .portfolio__gallery__item__inner__title {
-          transform: translateY(0);
-          opacity: 1; }
-      .portfolio__gallery__item--1 {
-        background-image: url("../img/techmarket.jpeg"); }
-      .portfolio__gallery__item--2 {
-        background-image: url("../img/trimmo.jpg"); }
-      .portfolio__gallery__item--3 {
-        background-image: url("../img/triano.jpg"); }
-      .portfolio__gallery__item--4 {
-        background-image: url("../img/jordan.jpg"); }
+  grid-column: full-start / full-end; }
 
 .skills {
   grid-row: 4 / 5;
@@ -250,16 +169,65 @@ body {
 
 .contact {
   grid-row: 5 / 6;
-  grid-column: full-start / full-end;
+  grid-column: full-start / full-end; }
+
+.title--primary {
+  font-size: 2rem;
+  color: #fff; }
+
+.title--secondary {
+  font-size: 1.4rem;
+  color: #42318C; }
+
+.btn, .btn:link, .btn:visited {
+  border: none;
+  padding: 1rem 3.5rem;
+  display: inline-block;
+  border-radius: 10rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  background: #817a97;
+  color: white;
+  margin: 0 1rem;
+  border: 1px solid transparent; }
+
+.btn--blue {
+  background: #42318C;
+  color: #fff; }
+  .btn--blue:hover {
+    background: #1E4855;
+    color: #fff; }
+
+.btn--white {
+  background: #fff;
+  color: #42318C;
+  border: 1px solid #42318C; }
+  .btn--white:hover {
+    background: #1E4855;
+    color: #fff;
+    border: 1px solid transparent; }
+
+.btn:hover {
+  transform: translateY(-2px);
+  /* (3px: move down) --- (-3px: move up) */
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+
+.btn:active {
+  transform: translateY(-1px);
+  /*related to the initial link) */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn:focus {
+  outline: none; }
+
+.contact {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 80vw 1fr;
   grid-template-rows: max-content 1fr max-content;
   justify-content: center;
-  align-content: center;
-  /*  @media screen and (max-width: 1164px) {
-        width: 60vw;
-   }*/ }
+  align-content: center; }
   .contact__header {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
@@ -314,6 +282,7 @@ body {
       .contact__bottom__item__icon {
         width: 3rem;
         height: 3rem;
+        object-fit: cover;
         fill: #42318C; }
 
 .form {
@@ -324,56 +293,6 @@ body {
   transform: translateY(-10%);
   z-index: 1000;
   justify-self: center; }
-
-.title--primary {
-  font-size: 2rem;
-  color: #fff; }
-
-.title--secondary {
-  font-size: 1.4rem;
-  color: #42318C; }
-
-.btn, .btn:link, .btn:visited {
-  border: none;
-  padding: 1rem 3.5rem;
-  display: inline-block;
-  border-radius: 10rem;
-  text-decoration: none;
-  font-size: 1.3rem;
-  background: #817a97;
-  color: white;
-  margin: 0 1rem;
-  border: 1px solid transparent; }
-
-.btn--blue {
-  background: #42318C;
-  color: #fff; }
-  .btn--blue:hover {
-    background: #1E4855;
-    color: #fff; }
-
-.btn--white {
-  background: #fff;
-  color: #42318C;
-  border: 1px solid #42318C; }
-  .btn--white:hover {
-    background: #1E4855;
-    color: #fff;
-    border: 1px solid transparent; }
-
-.btn:hover {
-  transform: translateY(-2px);
-  /* (3px: move down) --- (-3px: move up) */
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  cursor: pointer; }
-
-.btn:active {
-  transform: translateY(-1px);
-  /*related to the initial link) */
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn:focus {
-  outline: none; }
 
 .form {
   grid-row: 2 / 3;
@@ -537,6 +456,89 @@ body {
     z-index: -1;
     background: #817a97;
     opacity: 0; }
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  position: relative; }
+  .portfolio__display-fix {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    height: 5px;
+    transform: translateY(-0.5rem);
+    z-index: 2000; }
+  .portfolio__title {
+    font-size: 2rem;
+    color: #42318C;
+    margin-bottom: 2rem; }
+  .portfolio__gallery {
+    width: 100%;
+    padding: 1rem;
+    max-width: 136rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 45rem);
+    grid-template-rows: repeat(auto-fit, 22rem);
+    grid-auto-rows: 22rem;
+    grid-gap: 1rem;
+    align-content: center;
+    justify-content: center;
+    margin-top: 1rem; }
+    @media screen and (max-width: 471px) {
+      .portfolio__gallery {
+        padding: 0;
+        grid-template-columns: max-content; } }
+    .portfolio__gallery__item {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      z-index: 10;
+      position: relative;
+      border-radius: 3px; }
+      @media screen and (max-width: 471px) {
+        .portfolio__gallery__item {
+          width: 35rem; } }
+      .portfolio__gallery__item__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-image: linear-gradient(130deg, rgba(3, 1, 47, 0.941614) 0%, rgba(11, 11, 48, 0.950018) 39%, #07014a 100%);
+        transition: all .2s ease-in;
+        z-index: 200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .portfolio__gallery__item__inner__title {
+          font-size: 2.5rem;
+          color: #fff;
+          opacity: 0;
+          transform: translateY(30%);
+          transition: all .2s ease-in;
+          margin-bottom: 1.5rem; }
+      .portfolio__gallery__item:hover .portfolio__gallery__item__inner {
+        opacity: 1; }
+        .portfolio__gallery__item:hover .portfolio__gallery__item__inner__title {
+          transform: translateY(0);
+          opacity: 1; }
+      .portfolio__gallery__item--1 {
+        background-image: url("../img/techmarket.jpeg"); }
+      .portfolio__gallery__item--2 {
+        background-image: url("../img/trimmo.jpg"); }
+      .portfolio__gallery__item--3 {
+        background-image: url("../img/triano.jpg"); }
+      .portfolio__gallery__item--4 {
+        background-image: url("../img/jordan.jpg"); }
 
 .sidebar {
   width: 22rem;
