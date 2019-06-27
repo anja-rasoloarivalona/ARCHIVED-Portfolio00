@@ -139,6 +139,10 @@
 
     &__active {
 
+        & a {
+            color: $color-white;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -155,7 +159,10 @@
             fill: white;
         }
 
-        background: rgb(236, 230, 230);
+        background: rgb(211, 208, 208);
+
+        
+       
 
     }
 

@@ -48,7 +48,7 @@
     &__input {
         font-size: 1.4rem;
         font-family: inherit; 
-        color: black;
+        color: $color-secondary;
         padding: 1.3rem 0;
         border: none;
         border-bottom: 1px solid rgb(199, 198, 198); // so none of the element is moving by 3px when focused
@@ -56,6 +56,7 @@
         display: block;
         transition: all .3s;
         position: relative;
+        padding-left: 1rem;
 
         &:focus { 
             outline: none; 
@@ -82,6 +83,7 @@
         transition: all .3s;
         color: grey;
         margin-top: .5rem;
+        padding-left: 1rem;
       
 
 

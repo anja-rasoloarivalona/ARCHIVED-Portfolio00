@@ -14,7 +14,7 @@
         height: 100%;
         width: 100%;
         z-index: -1;
-        background: grey;
+        background: #817a97;
     }
 
     &__wrapper {
@@ -108,10 +108,44 @@
         top: 0;
         right: 0;
         width: 100%;
-        background: #0b33a1;
-        height: 5px;
+        background: #1E4855;
+        height: 1rem;
         transform: translateY(-.5rem);
         z-index: 2000;
+    }
+
+    &__btn {
+
+        color : red;
+        &,
+        &:link,
+        &:visited {
+            border: none;
+            padding: 1rem 3.5rem;
+            display: inline-block; 
+            border-radius: 10rem;
+            text-decoration: none;
+            font-size: 1.3rem;
+            background: #42318C;
+            color: white;
+            margin: 0 1rem;
+        }
+
+        &:hover {
+            transform: translateY(-4.2rem); /* (3px: move down) --- (-3px: move up) */
+            box-shadow: 0 1rem 2rem rgba(black,.2);
+            cursor: pointer;
+        }
+    
+        &:active {
+            transform: translateY(-1px); /*related to the initial link) */
+            box-shadow: 0 .5rem 1rem rgba(black,.2); 
+        }
+    
+        &:focus {
+            outline: none;
+          
+        }
     }
 
 }
