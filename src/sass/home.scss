@@ -16,14 +16,47 @@
         color: $color-grey;
         position: relative;
         width: 80%;
-      //  overflow: hidden;
+        overflow: hidden;
+       
+        @media screen and (max-width: 681px) {
+            width: 90%;
+            text-align: center;
+            font-size: 5rem; 
+        }
+        @media screen and (max-width: 476px) {                  
+            width: 90%;
+        }
+ 
+         @media screen and (max-width: 399px) {
+             font-size: 4rem; 
+         }
+ 
+         @media screen and (max-width: 300px) {
+             font-size: 3rem; 
+         }
 
         &--1 {
             position: absolute;
             top :0;
             bottom: 0;
             right: 0;
-            
+
+            @media screen and (max-width: 681px) {
+                position: relative; 
+            }
+
+            @media screen and (max-width: 476px) {
+                font-size: 5rem; 
+            }
+     
+             @media screen and (max-width: 399px) {
+                 font-size: 4rem; 
+             }
+     
+             @media screen and (max-width: 300px) {
+                 font-size: 3rem; 
+             }
+
 
         }
         &--2 {
@@ -32,6 +65,9 @@
             bottom: 0;
             right: 4.5rem;
             opacity: 0;
+            @media screen and (max-width: 681px) {
+                display: none;
+            }
         }
 
       
@@ -58,25 +94,16 @@
             width: 85%;
             z-index: 2;
             transform: translateX(100%);
-            background: #fff;
+           background: #fff;
         }
 
-        @media screen and (max-width: 384px) {
-           font-size: 5rem; 
-       }
-
-        @media screen and (max-width: 319px) {
-            font-size: 4rem; 
-        }
-
-        @media screen and (max-width: 260px) {
-            font-size: 3rem; 
-        }
+       
     }
 
     &__para {
         text-align: center;
         margin-bottom: 3rem;
+        width: 90%;
     }
 
 
