@@ -4,7 +4,8 @@
   "description": "portfolio",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Anja Rasoloarivalona",
   "license": "ISC",
@@ -16,5 +17,9 @@
     "gulp-imagemin": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2"
+  },
+  "homepage": "https://anja-rasoloarivalona.github.io/anjarasoloarivalona",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
