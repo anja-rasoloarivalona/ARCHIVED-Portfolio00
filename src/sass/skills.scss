@@ -53,6 +53,24 @@
     padding: 2rem;
     margin: 0 1rem;
     position: relative;
+    transition: all .3s ease-in;
+
+    & div {
+      transition: all .3s ease-in;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+
+      & div {
+          opacity: 0;
+      }
+
+      & .skills__container__list__item {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
 
     @media screen and (max-width: 471px) {
       margin: 0;
@@ -183,7 +201,18 @@
       }
     }
 
+    &--front {
+      background: #42318C;
+    }
+
+    &--back {
+      background: #15112C;
+    }
+
     &--business {
+      background: #1E4855;
+
+
         @media screen and (max-width: 1037px) {
             grid-column: 1 / -1;
             height: 70%;
@@ -207,6 +236,8 @@
       &__item {
         padding: 0.5rem 0;
         opacity: 0;
+        transform: translateY(20%);
+        transition: all .3s ease-in;
       }
     }
   }

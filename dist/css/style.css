@@ -72,7 +72,7 @@
     top: 0;
     right: 0;
     width: 100%;
-    background: blue;
+    background: #0b33a1;
     height: 5px;
     transform: translateY(-0.5rem);
     z-index: 2000; }
@@ -144,7 +144,7 @@ body {
     z-index: 2000; }
   .portfolio__title {
     font-size: 2rem;
-    color: #1a45bb;
+    color: #0b33a1;
     margin-bottom: 2rem; }
   .portfolio__gallery {
     width: 100%;
@@ -273,9 +273,9 @@ body {
       .contact__bottom__item div {
         text-align: center; }
       .contact__bottom__item__icon {
-        width: 5rem;
-        height: 5rem;
-        fill: #1a45bb; }
+        width: 3rem;
+        height: 3rem;
+        fill: #0b33a1; }
 
 .form {
   grid-row: 2 / 3;
@@ -292,7 +292,7 @@ body {
 
 .title--secondary {
   font-size: 1.4rem;
-  color: #1a45bb; }
+  color: #0b33a1; }
 
 .btn, .btn:link, .btn:visited {
   border: none;
@@ -365,7 +365,7 @@ body {
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid #1a45bb; }
+      border-bottom: 1px solid #0b33a1; }
     .form__input:focus:invalid {
       border-bottom: 1px solid #970404; }
     .form__input::-webkit-input-placeholder {
@@ -497,7 +497,7 @@ body {
     .sidebar__toggle span {
       width: 100%;
       height: .3rem;
-      background: #1a45bb; }
+      background: #0b33a1; }
   .sidebar__header {
     width: 100%;
     text-align: center;
@@ -544,7 +544,7 @@ body {
         .sidebar__list__item {
           padding: 3.5rem 3rem; } }
       .sidebar__list__item__icon {
-        fill: #1a45bb;
+        fill: #0b33a1;
         width: 2.5rem;
         height: 2.5rem;
         object-fit: cover;
@@ -554,7 +554,7 @@ body {
         font-size: 1.4rem;
         font-weight: 500; }
         .sidebar__list__item a, .sidebar__list__item a:visited, .sidebar__list__item a:active {
-          color: #1a45bb; }
+          color: #0b33a1; }
   .sidebar__active {
     background: #ece6e6; }
     .sidebar__active::before {
@@ -566,7 +566,7 @@ body {
       margin: auto;
       width: 3px;
       height: 100%;
-      background: #1a45bb; }
+      background: #0b33a1; }
     .sidebar__active svg {
       fill: white; }
   .sidebar__bottom {
@@ -580,7 +580,7 @@ body {
     .sidebar__social-media__icon {
       width: 2rem;
       height: 2rem;
-      fill: #1a45bb;
+      fill: #0b33a1;
       margin: 0 1rem; }
   .sidebar__copy {
     width: 100%;
@@ -617,14 +617,24 @@ body {
     margin: auto;
     padding: 1.5rem 3rem;
     font-size: 2.5rem;
-    color: #1a45bb; }
+    color: #0b33a1; }
   .skills__container {
     height: 100%;
     width: 100%;
     background: blue;
     padding: 2rem;
     margin: 0 1rem;
-    position: relative; }
+    position: relative;
+    transition: all .3s ease-in; }
+    .skills__container div {
+      transition: all .3s ease-in; }
+    .skills__container:hover {
+      transform: scale(1.05); }
+      .skills__container:hover div {
+        opacity: 0; }
+      .skills__container:hover .skills__container__list__item {
+        opacity: 1;
+        transform: translateY(0); }
     @media screen and (max-width: 471px) {
       .skills__container {
         margin: 0;
@@ -708,13 +718,19 @@ body {
         left: 0;
         right: 0;
         bottom: 0; }
-    @media screen and (max-width: 1037px) {
-      .skills__container--business {
-        grid-column: 1 / -1;
-        height: 70%; } }
-    @media screen and (max-width: 714px) {
-      .skills__container--business {
-        height: 100%; } }
+    .skills__container--front {
+      background: #42318C; }
+    .skills__container--back {
+      background: #15112C; }
+    .skills__container--business {
+      background: #1E4855; }
+      @media screen and (max-width: 1037px) {
+        .skills__container--business {
+          grid-column: 1 / -1;
+          height: 70%; } }
+      @media screen and (max-width: 714px) {
+        .skills__container--business {
+          height: 100%; } }
     .skills__container h1 {
       text-align: center; }
     .skills__container__list {
@@ -724,4 +740,6 @@ body {
       color: #fff; }
       .skills__container__list__item {
         padding: 0.5rem 0;
-        opacity: 0; }
+        opacity: 0;
+        transform: translateY(20%);
+        transition: all .3s ease-in; }
