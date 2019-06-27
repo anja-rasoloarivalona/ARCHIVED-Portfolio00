@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/jquery.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+    <title>Anja</title>
+</head>
+
+<body class="container">
+
+    <div class="loader">
+            <div class="atom-spinner">
+                    <div class="spinner-inner">
+                      <div class="spinner-line"></div>
+                      <div class="spinner-line"></div>
+                      <div class="spinner-line"></div>
+                      <!--Chrome renders little circles malformed :(-->
+                      <div class="spinner-circle">
+                        &#9679;
+                      </div>
+                    </div>
+            </div>
+    </div>
+
+
+   <nav class="sidebar">
+
+
+        <div class="sidebar__header">
+            <img src="img/profile.jpg" alt="" class="sidebar__header__img">
+            <div class="sidebar__header__point"></div>
+            <h3 class="title--secondary">Anja Rasoloarivalona</h3>
+            <div>I'm a developer</div>
+                    
+            
+        </div>
+        <ul class="sidebar__list">
+
+            <li class="sidebar__list__item sidebar__list__item--home sidebar__active">
+                <svg class="sidebar__list__item__icon">
+                    <use xlink:href="img/icon/sprite.svg#icon-home"></use>
+                </svg>
+                <a href="#home">Home</a>
+            </li>
+            <li class="sidebar__list__item sidebar__list__item--about">
+                <svg class="sidebar__list__item__icon">
+                    <use xlink:href="img/icon/sprite.svg#icon-profile"></use>
+                </svg>
+                <a href="#about">About</a>
+            </li>
+            <li class="sidebar__list__item sidebar__list__item--portfolio">
+                <svg class="sidebar__list__item__icon">
+                    <use xlink:href="img/icon/sprite.svg#icon-briefcase"></use>
+                </svg>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="sidebar__list__item sidebar__list__item--skills">
+                    <svg class="sidebar__list__item__icon">
+                        <use xlink:href="img/icon/sprite.svg#icon-cog"></use>
+                    </svg>
+                    <a href="#skills">Skills</a>
+            </li>
+            <li class="sidebar__list__item sidebar__list__item--contact">
+                <svg class="sidebar__list__item__icon">
+                    <use xlink:href="img/icon/sprite.svg#icon-chat"></use>
+                </svg>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <div class="sidebar__bottom">
+            <div class="sidebar__social-media">
+                <svg class="sidebar__social-media__icon">
+                    <use xlink:href="img/icon/sprite.svg#icon-linkedin2"></use>
+                </svg>
+                <svg class="sidebar__social-media__icon">
+                    <use xlink:href="img/icon/sprite.svg#icon-github"></use>
+                </svg>
+            </div>
+            <div class="sidebar__copy">
+                <small>
+                    Copyright
+                </small>
+            </div>
+
+        </div>
+
+
+
+    </nav>
+
+
+     <!----------------------HOME------------------->
+    <img src="img/layer1.svg" alt="layer" class="home__layer">
+    <div class="sidebar__toggle">
+            <span class="sidebar__toggle--1"></span>
+            <span class="sidebar__toggle--2"></span>
+            <span class="sidebar__toggle--3"></span>
+        </div>
+    <main class="home scroll" id="home">
+       
+            
+        <h3 class="title--secondary">Hello, my name is Anja Rasoloarivalona</h3>
+        <div class="home__title">
+
+                    I'm
+                
+                <span class="home__title--1">a Developer</span>
+                <span class="home__title--2">an Analyst</span>
+                <div class="home__title__writer"></div>
+                <div class="home__title__hide"></div>
+        </div>
+        <div class="home__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium doloribus
+            cupiditate ab, sunt culpa natus dolores, fugiat at hic ipsam quas labore odit qui.</div>
+        <div class="home__cta">
+            <a class="home__cta__btn btn btn--blue" href="#portfolio">
+                Portfolio
+            </a>
+            <a class="home__cta__btn btn btn--white" href="#contact">
+                Hire me
+            </a>
+        </div>
+    </main>
+
+    <!----------------------About------------------->
+    <img src="img/layer2.svg" alt="layer" class="about__layer">
+    <section class="about scroll" id="about">
+
+        <div class="about__wrapper">
+
+            <div class="about__text">
+
+                <h3 class="title--secondary">About Me</h3>
+                <div class="about__text__subtitle">I am a Developer and a Business Analyst</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quod.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, perferendis!</p>
+                <hr>
+                <a href="#skills" class="about__btn">Skills</a>
+            </div>
+            <img src="img/profile.jpg" alt="" class="about__img">
+        </div>
+        <div class="about__display-fix"></div>
+    </section>
+
+
+    <section class="portfolio scroll" id="portfolio">
+        
+        <h1 class="portfolio__title">My Portfolio</h1>
+
+
+        <div class="portfolio__gallery">
+            <div class="portfolio__gallery__item portfolio__gallery__item--1">
+                <div class="portfolio__gallery__item__inner">
+                    <h1 class="portfolio__gallery__item__inner__title">E-commerce</h1>
+                    <div class="portfolio__gallery__item__inner__cta">
+                        <a href="#" class="btn btn--blue">Live Demo</a>
+                        <a href="#" class="btn btn--white">View Source</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio__gallery__item portfolio__gallery__item--2">
+                <div class="portfolio__gallery__item__inner">
+                    <h1 class="portfolio__gallery__item__inner__title">Real Estate</h1>
+                    <div class="portfolio__gallery__item__inner__cta">
+                            <a href="#" class="btn btn--blue">Live Demo</a>
+                            <a href="#" class="btn btn--white">View Source</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__gallery__item portfolio__gallery__item--3">
+                <div class="portfolio__gallery__item__inner">
+                    <h1 class="portfolio__gallery__item__inner__title">Restaurant</h1>
+                    <div class="portfolio__gallery__item__inner__cta">
+                            <a href="#" class="btn btn--blue">Live Demo</a>
+                            <a href="#" class="btn btn--white">View Source</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__gallery__item portfolio__gallery__item--4">
+                <div class="portfolio__gallery__item__inner">
+                    <h1 class="portfolio__gallery__item__inner__title">Brand</h1>
+                    <div class="portfolio__gallery__item__inner__cta">
+                            <a href="#" class="btn btn--blue">Live Demo</a>
+                            <a href="#" class="btn btn--white">View Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio__display-fix"></div>
+    </section>
+
+
+    <!----------------------Skills------------------->
+
+    <section class="skills scroll" id="skills">
+        <h1 class="skills__title">My Skills</h1>
+        <div class="skills__wrapper">
+            <div class="skills__container skills__container--front">
+                <h1 class="title--primary">Front-End</h1>
+
+                <div class="skills__container__draw">
+                    <div class=" skills__container__draw--front skills__container__draw--front__1"></div>
+                    <div class="skills__container__draw--front skills__container__draw--front__2"></div>
+                    <div class="skills__container__draw--front skills__container__draw--front__3"></div>
+                </div>
+                <ul class="skills__container__list">
+                    <li class="skills__container__list__item">HTML5</li>
+                    <li class="skills__container__list__item">ES6</li>
+                    <li class="skills__container__list__item">jQuery</li>
+                    <li class="skills__container__list__item">React & Redux</li>
+                    <li class="skills__container__list__item">CSS3 & Sass</li>
+                    <li class="skills__container__list__item">Bootstrap4</li>
+                    <li class="skills__container__list__item">Git</li>
+                    <li class="skills__container__list__item">Gulp</li>
+                </ul>
+            </div>
+            <div class="skills__container skills__container--back">
+                <h1 class="title--primary">Back-End</h1>
+                <div class="skills__container__draw">
+                    <div class="skills__container__draw--back skills__container__draw--back__1"></div>
+                    <div class=" skills__container__draw--back skills__container__draw--back__2"></div>
+                    <div class=" skills__container__draw--back skills__container__draw--back__3"></div>
+                    <div class=" skills__container__draw--back skills__container__draw--back__4"></div>
+                </div>
+                <ul class="skills__container__list">
+                    <li class="skills__container__list__item">Node.js</li>
+                    <li class="skills__container__list__item">Express.js</li>
+                    <li class="skills__container__list__item">MySQL</li>
+                    <li class="skills__container__list__item">MongoDB</li>
+                </ul>
+            </div>
+            <div class="skills__container skills__container--business">
+                <div class="skills__container__draw skills__container__draw__business">
+                    <div class="skills__container__draw--business skills__container__draw--business__1"></div>
+                    <div class="skills__container__draw--business skills__container__draw--business__2"></div>
+                    <div class="skills__container__draw--business skills__container__draw--business__3"></div>
+
+                </div>
+                <h1 class="title--primary">Business Analyst</h1>
+                <ul class="skills__container__list">
+                    <li class="skills__container__list__item">Business Process Management</li>
+                    <li class="skills__container__list__item">IT Project Management</li>
+                    <li class="skills__container__list__item">Data analysis</li>
+                    <li class="skills__container__list__item">Financial Analysis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!----------------------CONTACT------------------>
+
+    <section class="contact scroll" id="contact">
+
+        <div class="contact__header">
+            <h1 class="title--primary">Have a project on Mind?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam mollitia consequatur beatae
+                eligendi sequi, voluptatem laudantium nostrum iure incidunt.</p>
+        </div>
+
+
+
+        <form action="https://formspree.io/rasoloanja@gmail.com" method="POST" class="form">
+
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Name" id="name" name="name" required>
+                <label for="name" class="form__label">Name*</label>
+            </div>
+
+            <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email" id="email" name="name" required>
+                <label for="email" class="form__label">Email*</label>
+            </div>
+
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Company Name" id="company" name="name" required>
+                <label for="email" class="form__label">Company Name</label>
+            </div>
+
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Phone" id="phone" name="name" required>
+                <label for="email" class="form__label">Phone*</label>
+            </div>
+
+            <div class="form__group form__group--message">
+                <textarea type="text" name="name" class="form__input" placeholder="Message" id="message"
+                    required></textarea>
+                <label for="message" class="form__label">Message*</label>
+            </div>
+            <input class="form__submit btn btn--blue" id="email-submit" type="submit" value="Send">
+        </form>
+
+        <div class="contact__bottom">
+            <div class="contact__bottom__wrapper">
+                <div class="contact__bottom__item">
+                    <svg class="contact__bottom__item__icon">
+                        <use xlink:href="img/icon/sprite.svg#icon-mobile"></use>
+                    </svg>
+                    <h2>Mobile</h2>
+                    <div>+1 438 896 2026</div>
+                </div>
+                <div class="contact__bottom__item">
+                    <svg class="contact__bottom__item__icon">
+                        <use xlink:href="img/icon/sprite.svg#icon-envelop"></use>
+                    </svg>
+                    <h2>Email</h2>
+                    <div>rasoloanja@gmail.com</div>
+                </div>
+                <div class="contact__bottom__item">
+                    <svg class="contact__bottom__item__icon">
+                        <use xlink:href="img/icon/sprite.svg#icon-location"></use>
+                    </svg>
+                    <h2>Address</h2>
+                    <div>Montreal QC, H2J 4G3</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
