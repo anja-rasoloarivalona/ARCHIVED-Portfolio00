@@ -14,7 +14,7 @@ $color-white: #fff;
 html {
     box-sizing: border-box;
     font-size: 62.5%; 
-    scroll-behavior: smooth;
+  //  scroll-behavior: smooth;
     overflow-x: hidden;
 
     @media screen and (max-width: 500px) {
@@ -74,6 +74,19 @@ body {
     flex-direction: column;
    // justify-self: center;
     padding: 2rem 0;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &__display-fix {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background: white;
+        height: 5px;
+        transform: translateY(-.5rem);
+        z-index: 2000;
+    }
    
 
     &__title {

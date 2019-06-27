@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  
     
 
     &__layer {
@@ -100,6 +101,17 @@
             left: 0;
         }
        // z-index: -1;
+    }
+
+    &__display-fix {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background: blue;
+        height: 5px;
+        transform: translateY(-.5rem);
+        z-index: 2000;
     }
 
 }

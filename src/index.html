@@ -28,35 +28,37 @@
             <img src="img/profile.jpg" alt="" class="sidebar__header__img">
             <div class="sidebar__header__point"></div>
             <h3 class="title--secondary">Anja Rasoloarivalona</h3>
-            <div>I'm a <span>Developer</span></div>
+            <div>I'm a developer</div>
+                    
+            
         </div>
         <ul class="sidebar__list">
 
-            <li class="sidebar__list__item sidebar__active">
+            <li class="sidebar__list__item sidebar__list__item--home sidebar__active">
                 <svg class="sidebar__list__item__icon">
                     <use xlink:href="img/icon/sprite.svg#icon-home"></use>
                 </svg>
                 <a href="#home">Home</a>
             </li>
-            <li class="sidebar__list__item">
+            <li class="sidebar__list__item sidebar__list__item--about">
                 <svg class="sidebar__list__item__icon">
                     <use xlink:href="img/icon/sprite.svg#icon-profile"></use>
                 </svg>
                 <a href="#about">About</a>
             </li>
-            <li class="sidebar__list__item">
+            <li class="sidebar__list__item sidebar__list__item--portfolio">
                 <svg class="sidebar__list__item__icon">
                     <use xlink:href="img/icon/sprite.svg#icon-briefcase"></use>
                 </svg>
                 <a href="#portfolio">Portfolio</a>
             </li>
-            <li class="sidebar__list__item">
+            <li class="sidebar__list__item sidebar__list__item--skills">
                     <svg class="sidebar__list__item__icon">
                         <use xlink:href="img/icon/sprite.svg#icon-cog"></use>
                     </svg>
                     <a href="#skills">Skills</a>
             </li>
-            <li class="sidebar__list__item">
+            <li class="sidebar__list__item sidebar__list__item--contact">
                 <svg class="sidebar__list__item__icon">
                     <use xlink:href="img/icon/sprite.svg#icon-chat"></use>
                 </svg>
@@ -88,14 +90,22 @@
      <!----------------------HOME------------------->
     <img src="img/layer1.svg" alt="layer" class="home__layer">
 
-    <main class="home" id="home">
+    <main class="home scroll" id="home">
        <div class="sidebar__toggle">
             <span class="sidebar__toggle--1"></span>
             <span class="sidebar__toggle--2"></span>
             <span class="sidebar__toggle--3"></span>
         </div>
         <h3 class="title--secondary">Hello, my name is Anja Rasoloarivalona</h3>
-        <div class="home__title">I'm a Developer</div>
+        <div class="home__title">
+
+                    I'm
+                
+                <span class="home__title--1">a Developer</span>
+                <span class="home__title--2">an Analyst</span>
+                <div class="home__title__writer"></div>
+                <div class="home__title__hide"></div>
+        </div>
         <div class="home__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium doloribus
             cupiditate ab, sunt culpa natus dolores, fugiat at hic ipsam quas labore odit qui.</div>
         <div class="home__cta">
@@ -110,7 +120,7 @@
 
     <!----------------------About------------------->
     <img src="img/layer2.svg" alt="layer" class="about__layer">
-    <section class="about" id="about">
+    <section class="about scroll" id="about">
 
         <div class="about__wrapper">
 
@@ -125,11 +135,12 @@
             </div>
             <img src="img/profile.jpg" alt="" class="about__img">
         </div>
-
+        <div class="about__display-fix"></div>
     </section>
 
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio scroll" id="portfolio">
+        
         <h1 class="portfolio__title">My Portfolio</h1>
 
 
@@ -172,12 +183,14 @@
                 </div>
             </div>
         </div>
+
+        <div class="portfolio__display-fix"></div>
     </section>
 
 
     <!----------------------Skills------------------->
 
-    <section class="skills" id="skills">
+    <section class="skills scroll" id="skills">
         <h1 class="skills__title">My Skills</h1>
         <div class="skills__wrapper">
             <div class="skills__container skills__container--front">
@@ -236,7 +249,7 @@
 
     <!----------------------CONTACT------------------>
 
-    <section class="contact" id="contact">
+    <section class="contact scroll" id="contact">
 
         <div class="contact__header">
             <h1 class="title--primary">Have a project on Mind?</h1>

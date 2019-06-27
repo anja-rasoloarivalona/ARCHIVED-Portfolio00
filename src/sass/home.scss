@@ -14,9 +14,55 @@
         font-size: 6rem;
         font-weight: 600;
         color: $color-grey;
+        position: relative;
+        width: 80%;
+      //  overflow: hidden;
+
+        &--1 {
+            position: absolute;
+            top :0;
+            bottom: 0;
+            right: 0;
+            
+
+        }
+        &--2 {
+            position: absolute;
+            top :0;
+            bottom: 0;
+            right: 4.5rem;
+            opacity: 0;
+        }
+
+      
+
+        &__writer {
+            position: absolute;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            right: -2rem;
+            height: 50%;
+            width: 1px;
+            background: black;
+            z-index: 10;
+        }
+
+        &__hide {
+            position: absolute;
+            top:0;
+            bottom: 0;
+            right: -2rem;
+            margin: auto;
+            height: 80%;
+            width: 85%;
+            z-index: 2;
+            transform: translateX(100%);
+            background: #fff;
+        }
 
         @media screen and (max-width: 384px) {
-            font-size: 5rem; 
+           font-size: 5rem; 
        }
 
         @media screen and (max-width: 319px) {
