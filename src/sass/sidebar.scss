@@ -146,6 +146,14 @@
 
                 &,
                 &:visited,
+                &:link {
+                    color: $color-primary;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
                 &:active {
                     color: $color-primary;
                 }

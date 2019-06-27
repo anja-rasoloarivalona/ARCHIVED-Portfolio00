@@ -3,7 +3,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  opacity: 0; }
   .about__layer {
     grid-row: 2 / 3;
     grid-column: full-start / full-end;
@@ -94,7 +95,7 @@
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
       cursor: pointer; }
     .about__btn:active {
-      transform: translateY(-1px);
+      transform: translateY(-4.1rem);
       /*related to the initial link) */
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
     .about__btn:focus {
@@ -203,7 +204,8 @@ body {
       background-size: cover;
       background-position: center;
       z-index: 10;
-      position: relative; }
+      position: relative;
+      border-radius: 3px; }
       @media screen and (max-width: 471px) {
         .portfolio__gallery__item {
           width: 35rem; } }
@@ -340,7 +342,8 @@ body {
   font-size: 1.3rem;
   background: #817a97;
   color: white;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  border: 1px solid transparent; }
 
 .btn--blue {
   background: #42318C;
@@ -640,7 +643,11 @@ body {
         width: 100%;
         height: 100%;
         transform: translateY(2px) translateX(10%); }
-        .sidebar__list__item a, .sidebar__list__item a:visited, .sidebar__list__item a:active {
+        .sidebar__list__item a, .sidebar__list__item a:visited, .sidebar__list__item a:link {
+          color: #42318C; }
+        .sidebar__list__item a:focus {
+          outline: none; }
+        .sidebar__list__item a:active {
           color: #42318C; }
   .sidebar__active {
     background: #d3d0d0; }

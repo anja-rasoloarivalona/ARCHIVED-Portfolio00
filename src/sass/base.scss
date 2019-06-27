@@ -144,6 +144,8 @@ body {
             background-position: center;
             z-index: 10;
             position: relative;
+            border-radius: 3px;
+        //    box-shadow: 10px 10px 24px -12px rgba(8,8,8,1);
 
             @media screen and (max-width: 471px) {
                 width: 35rem;

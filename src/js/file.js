@@ -21,10 +21,12 @@ $(window).on('load', function(){
     var loader = new TimelineMax({repeat:0})
     loader
     
+
     .to('.loader', 1, {autoAlpha: 0},'+=3')
     .to('.home', 1, {y:0, opacity: 1})
     .to('.sidebar', 1, {x: isSidebarAnimated},'-=.5')
-    .to('.home__layer', 1, {opacity: 1},'-=.5')
+    .to('.home__layer', 1, {opacity: 1})
+    .to('.about', .2, {opacity: 1},'-=.7')
     .to('.sidebar__toggle', .5, {opacity: 1},'-=.5')
     .to('html', .3, {overflowY: 'scroll'},'-=.5')
 })
@@ -108,7 +110,7 @@ if(width > 681) {
     var writer = new TimelineMax({repeat:-1, repeatDelay: 1.5});
     //set d
     writer
-   
+  
     .to('.home__title__writer', 1.5, {x: -372},'+=4')
     .to('.home__title__hide', 1.5, {x: 8},'-=1.5')
     .to('.home__title', 1.5, {x: '20%'},'-=1.5')
