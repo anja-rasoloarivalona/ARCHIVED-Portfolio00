@@ -21,6 +21,21 @@
 
 <body class="container">
 
+    <div class="loader">
+            <div class="atom-spinner">
+                    <div class="spinner-inner">
+                      <div class="spinner-line"></div>
+                      <div class="spinner-line"></div>
+                      <div class="spinner-line"></div>
+                      <!--Chrome renders little circles malformed :(-->
+                      <div class="spinner-circle">
+                        &#9679;
+                      </div>
+                    </div>
+            </div>
+    </div>
+
+
    <nav class="sidebar">
 
 
@@ -89,13 +104,14 @@
 
      <!----------------------HOME------------------->
     <img src="img/layer1.svg" alt="layer" class="home__layer">
-
-    <main class="home scroll" id="home">
-       <div class="sidebar__toggle">
+    <div class="sidebar__toggle">
             <span class="sidebar__toggle--1"></span>
             <span class="sidebar__toggle--2"></span>
             <span class="sidebar__toggle--3"></span>
         </div>
+    <main class="home scroll" id="home">
+       
+            
         <h3 class="title--secondary">Hello, my name is Anja Rasoloarivalona</h3>
         <div class="home__title">
 

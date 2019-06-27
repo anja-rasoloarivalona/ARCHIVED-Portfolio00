@@ -1,10 +1,49 @@
+var width = $(document).width();
+console.log(width);
 
 
-var a = new TimelineMax
+
+$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+});
+
+
+var isSidebarAnimated;
+var showSideBar;
+
+if(width > 900){
+    isSidebarAnimated = 0
+} else {
+    isSidebarAnimated = '-100%';
+}
+
+$(window).on('load', function(){
+    var loader = new TimelineMax({repeat:0})
+    loader
+    
+    .to('.loader', 1, {autoAlpha: 0},'+=3')
+    .to('.home', 1, {y:0, opacity: 1})
+    .to('.sidebar', 1, {x: isSidebarAnimated},'-=.5')
+    .to('.home__layer', 1, {opacity: 1},'-=.5')
+    .to('.sidebar__toggle', .5, {opacity: 1},'-=.5')
+    .to('html', .3, {overflowY: 'scroll'},'-=.5')
+})
+ 
+
+
+if(width > 900){
+    showSideBar = 0
+} else {
+    showSideBar= '0%';
+}
+
+
+
+ var a = new TimelineMax
         a
         .to('.sidebar__toggle--1', .4, {rotation: 135, position:'absolute', top: '1rem',ease: Power2.easeOut})
         .to('.sidebar__toggle--3', .4, {rotation: -135, position:'absolute', top: '1rem', ease: Power2.easeOut},'-=.4')  
-        .to('.sidebar', .4, {x: '0'}, '-=.4')
+        .to('.sidebar', .4, {x: showSideBar}, '-=.4')
         .stop()
 
 var b = new TimelineMax
@@ -63,15 +102,14 @@ $(function() {
     });
  });
 
- var width = $(document).width();
- console.log(width);
+
 
 if(width > 681) {
     var writer = new TimelineMax({repeat:-1, repeatDelay: 1.5});
     //set d
     writer
    
-    .to('.home__title__writer', 1.5, {x: -372},'+=2')
+    .to('.home__title__writer', 1.5, {x: -372},'+=4')
     .to('.home__title__hide', 1.5, {x: 8},'-=1.5')
     .to('.home__title', 1.5, {x: '20%'},'-=1.5')
     .to('.home__title--2', .2, {opacity: 1})
@@ -89,7 +127,9 @@ if(width > 681) {
     .to('.home__title--1', .2, {opacity: 1})
     .to('.home__title__writer', 1.5, {x: -5})
     .to('.home__title__hide', 1.5, {x: 372},'-=1.5')
-    .to('.home__title', 1.5, {x: '0%'},'-=1.5')   
+    .to('.home__title', 1.5, {x: '0%'},'-=1.5')  
+    
+    .delay(5)
 
 } 
 
@@ -159,8 +199,7 @@ $(document).on('scroll', function() {
     $(".sidebar__list li").removeClass("sidebar__active");
     $(".sidebar__list li.sidebar__list__item--contact").addClass("sidebar__active");
     } 
-})
-
+}) 
 
 
 
