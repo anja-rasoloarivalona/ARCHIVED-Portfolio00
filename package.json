@@ -20,6 +20,7 @@
   },
   "homepage": "https://anja-rasoloarivalona.github.io/anjarasoloarivalona",
   "dependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "node-dig-dns": "^0.2.10"
   }
 }

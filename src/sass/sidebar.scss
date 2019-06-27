@@ -69,7 +69,7 @@
         }
 
         & div {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
 
         &__point {
@@ -203,7 +203,9 @@
         align-items: center;
         justify-content: center;
 
-        &__icon {
+      
+
+        &__icon  {
             width: 2rem;
             height: 2rem;
             fill: $color-primary;

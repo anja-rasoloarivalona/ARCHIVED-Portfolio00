@@ -12,7 +12,7 @@ var scene1 = new ScrollMagic.Scene({
     offset: 350
     
 })
-.reverse(true)
+.reverse(false)
 .setTween(scroll1)
 .addIndicators()
 .addTo(controller);

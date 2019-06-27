@@ -34,7 +34,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem 2rem; }
+    padding: 3rem 1.8rem; }
     @media screen and (max-width: 548px) {
       .about__text {
         top: 0;
@@ -243,7 +243,8 @@ body {
       transform: translateY(-1rem); }
     .contact__header p {
       max-width: 60%;
-      text-align: center; }
+      text-align: center;
+      color: #fff; }
   .contact__bottom {
     grid-column: 1 / -1;
     width: 100%;
@@ -594,7 +595,7 @@ body {
       object-fit: cover;
       border-radius: 50%; }
     .sidebar__header div {
-      font-size: 1.4rem; }
+      font-size: 1.2rem; }
     .sidebar__header__point {
       height: 1.5rem;
       width: 1.5rem;
