@@ -112,7 +112,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   overflow-x: hidden;
-  overflow-y: hidden; }
+  /* overflow-y: hidden;*/ }
   @media screen and (max-width: 500px) {
     html {
       font-size: 50%; } }
@@ -535,10 +535,12 @@ body {
       .portfolio__gallery__item--1 {
         background-image: url("../img/techmarket.jpeg"); }
       .portfolio__gallery__item--2 {
-        background-image: url("../img/trimmo.jpg"); }
+        background-image: url("../img/weather.jpeg"); }
       .portfolio__gallery__item--3 {
-        background-image: url("../img/triano.jpg"); }
+        background-image: url("../img/trimmo.jpg"); }
       .portfolio__gallery__item--4 {
+        background-image: url("../img/triano.jpg"); }
+      .portfolio__gallery__item--5 {
         background-image: url("../img/jordan.jpg"); }
 
 .sidebar {
